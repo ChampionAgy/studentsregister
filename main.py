@@ -355,17 +355,9 @@ async def mark_attendance(request: Request):
     return recorded_ids
     
 
-                 
-
-    # cv2.imshow("Feed", frame)
-
 cv2.destroyAllWindows()
-# cap.release()
-
-
 
 #make request to get all the other images and add the current one to it before encoding
 
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=3000)
-
